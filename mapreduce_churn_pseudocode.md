@@ -17,11 +17,8 @@ MAP(input_key, record):
             (1, churn_value)
         )
 ```
-
-# ---------------------------------------------------------
+```text
 # COMBINE STAGE
-# ---------------------------------------------------------
-
 COMBINE(key, values):
 
     local_customers = 0
@@ -39,8 +36,8 @@ COMBINE(key, values):
         key,
         (local_customers, local_churned)
     )
-
-
+```
+```text
 # ---------------------------------------------------------
 # SHUFFLE AND SORT STAGE
 # ---------------------------------------------------------
@@ -70,12 +67,9 @@ COMBINE(key, values):
 #
 # (Month-to-month, Electronic check)
 #     -> [(3, 2), (5, 1), (2, 1)]
-
-
-# ---------------------------------------------------------
+```
+```text
 # REDUCE STAGE
-# ---------------------------------------------------------
-
 REDUCE(key, values):
 
     total_customers = 0
@@ -106,7 +100,7 @@ REDUCE(key, values):
             churn_rate
         )
     )
-
+```
 
 # ---------------------------------------------------------
 # EXAMPLE OUTPUT
