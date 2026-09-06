@@ -1,7 +1,9 @@
 ```text
 # MapReduce Pseudo-Code
 # Customer Churn Analysis by Contract Type and Payment Method
+#------------------------------------------------------------
 # MAP STAGE
+#------------------------------------------------------------
 MAP(input_key, record):
 
     IF record.contract IS NOT NULL
@@ -69,7 +71,10 @@ COMBINE(key, values):
 #     -> [(3, 2), (5, 1), (2, 1)]
 ```
 ```text
+#---------------------------------------------------------
 # REDUCE STAGE
+#---------------------------------------------------------
+
 REDUCE(key, values):
 
     total_customers = 0
@@ -101,7 +106,7 @@ REDUCE(key, values):
         )
     )
 ```
-
+``` text
 # ---------------------------------------------------------
 # EXAMPLE OUTPUT
 # ---------------------------------------------------------
@@ -130,3 +135,4 @@ REDUCE(key, values):
 #     total_churned,
 #     churn_rate
 # )
+```
