@@ -2,20 +2,6 @@
 -- 01_data_validation_and_cleaning_emr_hue.hql
 -- Environment: Amazon EMR + Hue + Hive + Amazon S3
 -- Project: Big Data Analysis of Customer Churn Patterns
---
--- BEFORE RUNNING:
--- 1. Replace every REPLACE_BUCKET_NAME with your S3 bucket.
--- 2. Upload the raw CSV to:
---      s3://REPLACE_BUCKET_NAME/customer-churn/raw/
--- 3. Keep raw, typed, cleaned, and export prefixes separate.
--- 4. Run the script section by section in Hue for easier troubleshooting.
--- 5. The signup_date conversion assumes yyyy-MM-dd.
---
--- S3 locations used:
--- raw:     s3://REPLACE_BUCKET_NAME/customer-churn/raw/
--- typed:   s3://REPLACE_BUCKET_NAME/customer-churn/typed_orc/
--- cleaned: s3://REPLACE_BUCKET_NAME/customer-churn/cleaned_orc/
--- export:  s3://REPLACE_BUCKET_NAME/customer-churn/export_tsv/
 -- =====================================================================
 
 SET hive.execution.engine=tez;
