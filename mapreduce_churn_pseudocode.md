@@ -1,3 +1,4 @@
+```text
 # MapReduce Pseudo-Code
 # Customer Churn Analysis by Contract Type and Payment Method
 # MAP STAGE
@@ -15,7 +16,7 @@ MAP(input_key, record):
             key,
             (1, churn_value)
         )
-
+```
 
 # ---------------------------------------------------------
 # COMBINE STAGE
