@@ -1,6 +1,5 @@
 # MapReduce Pseudo-Code
 # Customer Churn Analysis by Contract Type and Payment Method
-
 # ---------------------------------------------------------
 # MAP STAGE
 # ---------------------------------------------------------
